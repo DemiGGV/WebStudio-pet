@@ -619,6 +619,8 @@ input.field-input::placeholder {
     padding-left: 16px;
     resize: none;
     min-height: 120px;
+    font-size: 12px;
+    line-height: 1.17;
 }
 
 textarea.field-input::placeholder {
