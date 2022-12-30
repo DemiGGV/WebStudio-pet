@@ -70,11 +70,10 @@ body {
     background-color: var(--bgc-white);
     font-family: 'roboto', 'sans-serif';
     font-size: 16px;
+    line-height: 1.5;
     font-weight: 400;
     margin: 0 auto;
 }
-
-/*------------------- header styles -------------------*/
 
 .menu-item,
 .addr-item,
@@ -87,6 +86,61 @@ body {
     list-style: none;
 }
 
+/*------------------- header styles -------------------*/
+/* @media screen and (min-width: 480px) 395px 16+16 */
+
+.mobile-nav {
+    display: flex;
+    padding: 24px 16px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E7E9FC;
+    box-shadow:
+        0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.main-menu,
+.header-addr {
+    display: none;
+}
+/* Logo styles */
+
+.logo {
+    display: inline-block;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    width: 115px;
+    font-family: 'Raleway', 'sans-serif';
+    font-weight: 800;
+    font-size: 1.125em;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--Dark);
+}
+
+.logo-web {
+    color: var(--primary-brand);
+}
+.hamburger-icon {
+    fill: currentColor;
+    stroke: currentColor;
+}
+
+.hamburger-btn {
+    top: 0;
+    right: 0;
+    color: var(--Dark);
+    background-color: transparent;
+    border: none;
+    outline: transparent;
+}
+
+/* 
 .menu-link,
 .addr-mail,
 .addr-tel,
@@ -115,29 +169,9 @@ body {
     align-items: center;
 }
 
-/* Logo styles */
-.logo {
-    display: inline-block;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    width: 115px;
-    font-family: 'Raleway', 'sans-serif';
-    font-weight: 800;
-    font-size: 1.125em;
-    line-height: 1.33;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--Dark);
-}
-
-.logo-web {
-    color: var(--primary-brand);
-}
-
 /* --- Main menu styles --- */
 
+/* 
 .header-nav,
 .main-menu,
 .header-addr {
@@ -156,10 +190,10 @@ body {
 .menu-item:not(:last-child),
 .addr-item:not(:last-child) {
     margin-right: 40px;
-}
+} */
 
 /* .page-header */
-.menu-link {
+/* .menu-link {
     color: var(--Dark);
     font-weight: 600;
     text-align: center;
@@ -200,10 +234,10 @@ body {
 
 .main-menu {
     margin-left: 77px;
-}
+} */
 
 /*------------------- index.html styles -------------------*/
-
+/* 
 .section {
     padding: 120px 0;
 }
@@ -216,10 +250,10 @@ body {
     text-align: center;
     text-transform: capitalize;
     margin-bottom: 72px;
-}
+} */
 
 /*------------------- title section styles */
-
+/* 
 .main.section {
     max-width: 1600px;
     margin-right: auto;
@@ -264,10 +298,10 @@ body {
     color: var(--bgc-white);
     background-color: var(--order-active);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+} */
 
 /*------------------- Our benefits section */
-
+/* 
 .benefits.section {
     padding-bottom: 0;
 }
@@ -311,16 +345,16 @@ body {
 
 .text {
     line-height: 1.5;
-}
+} */
 
 /*------------------- Our gallery section style */
-
+/* 
 .card-item {
     background-color: var(--bgc-white);
-}
+} */
 
 /*------------------- Our team section */
-.team.section {
+/* .team.section {
     background: var(--Light);
 }
 
@@ -357,10 +391,10 @@ body {
 
 .card-content {
     padding: 32px 0;
-}
+} */
 
 /*------------------- Customers section styles */
-
+/* 
 .customers .card-link {
     display: flex;
     align-items: center;
@@ -383,28 +417,26 @@ body {
 .customers .card-link:focus {
     color: var(--primary-brand);
     border: 1px solid var(--primary-brand);
-}
+} */
 
 /*------------------- Footer section styles */
-
-.footer {
+ 
+/* .footer {
     background-color: var(--Dark);
     color: var(--Accent);
     text-align: left;
     padding: 100px 0;
-    /* max-width: 1600px;
-    margin: 0 auto; */
-}
+} */
 
 /* --- Main footer container */
 
-.footer-contain {
+/* .footer-contain {
     display: flex;
-}
+} */
 
 /* ---First footer column */
 
-.footer-text {
+/* .footer-text {
     display: block;
 }
 
@@ -417,11 +449,11 @@ body {
 .footer .text {
     max-width: 264px;
     letter-spacing: 0.02em;
-}
+} */
 
 /* ---Second footer column */
 
-.footer-socials {
+/* .footer-socials {
     margin-left: 120px;
 }
 
@@ -446,11 +478,11 @@ body {
 .footer-socials .link:hover,
 .footer-socials .link:focus {
     background-color: var(--Success);
-}
+} */
 
 /* ---Third footer column */
 
-.footer-subscribe {
+/* .footer-subscribe {
     margin-left: 80px;
 }
 
@@ -489,10 +521,10 @@ input.field-input::placeholder {
 .subscribe-icon {
     margin-left: 16px;
     fill: currentColor;
-}
+} */
 
 /* ----Modal window with back drop styles---- */
-
+/* 
 .back-drop {
     position: fixed;
     top: 0;
@@ -553,10 +585,11 @@ input.field-input::placeholder {
 .close-window:hover,
 .close-window:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    color: var(--order-active);
 }
 
 /* Modal window form styles */
-
+/* 
 .modal-title {
     margin-top: 48px;
     font-weight: 600;
@@ -689,9 +722,9 @@ textarea.field-input::placeholder {
     display: flex;
     justify-content: center;
     margin-top: 24px;
-}
+} */
 /*------------------- portfolio.html styles -------------------*/
-
+/* 
 .protfolio {
     padding-top: 96px;
     padding-bottom: 120px;
@@ -783,7 +816,6 @@ textarea.field-input::placeholder {
 }
 
 .overlay {
-    /* display: block; */
     padding: 40px 32px;
     margin: 0;
     position: absolute;
@@ -792,8 +824,6 @@ textarea.field-input::placeholder {
     left: 0px;
     top: 0px;
     background: #4D5AE5;
-    /* background-blend-mode: soft-light;
-    mix-blend-mode: normal; */
 
     line-height: 24px;
     letter-spacing: 0.02em;
@@ -801,6 +831,6 @@ textarea.field-input::placeholder {
 
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(var(--cubic));
-}
+} */
 
 /* .filter-tag {} */
