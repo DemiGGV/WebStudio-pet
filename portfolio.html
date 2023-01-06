@@ -26,10 +26,10 @@
         </a>
         <ul class="list main-menu">
           <li class="menu-item">
-            <a href="./index.html" class="link menu-link is-active">Studio</a>
+            <a href="./index.html" class="link menu-link">Studio</a>
           </li>
           <li class="menu-item">
-            <a href="./portfolio.html" class="link menu-link">Portfolio</a>
+            <a href="./portfolio.html" class="link menu-link is-active">Portfolio</a>
           </li>
           <li class="menu-item">
             <a href="./index.html" class="link menu-link">Contacts</a>
@@ -54,7 +54,7 @@
     <!-- Mobile menu modal -->
 
     <div class="mobile-menu js-menu-container">
-      <button type="button" class="btn close-window  js-close-menu">
+      <button type="button" class="btn close-menu js-close-menu">
         <svg class="icon" width="8" height="8">
           <use href="./images/symbol-defs.svg#icon-close-black"></use>
         </svg>
@@ -114,13 +114,13 @@
   </header>
 
   <main>
-    <section class="protfolio section">
+    <section class="protfolio">
       <div class="container">
         <h1 class="section-title visually-hidden">Our Portfolio</h1>
 
         <!-- Filter buttons -->
 
-        <ul class="filters-list">
+        <ul class="list filters-list">
           <li class="filters-item">
             <button type="button" class="filter-button">All</button>
           </li>
@@ -130,6 +130,7 @@
           <li class="filters-item">
             <button type="button" class="filter-button">App</button>
           </li>
+          <li class="list-break"></li>
           <li class="filters-item">
             <button type="button" class="filter-button">Design</button>
           </li>
@@ -140,15 +141,39 @@
 
         <!-- gallery section -->
 
-        <ul class="card-list">
+        <ul class="list card-list">
           <li class="card-item">
-            <a class="card-link" href="./">
+            <a class="link card-link" href="./">
               <div class="card-image-box">
-                <img class="card-img" src="./images/portfolio/banking-app-interface.jpg"
-                  alt="Banking App Interface Concept" width="360" />
-                <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
-                  App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                <picture>
+                  <source
+                    srcset="./images/desktop/banking-app-interface.webp 1x, ./images/desktop/banking-app-interface@2x.webp 2x"
+                    media="(min-width: 1158px)" type="image/webp">
+                  <source
+                    srcset="./images/desktop/banking-app-interface.jpg 1x, ./images/desktop/banking-app-interface@2x.jpg 2x"
+                    media="(min-width: 1158px)">
+
+                  <source
+                    srcset="./images/tablet/banking-app-interface.webp 1x, ./images/tablet/banking-app-interface@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp">
+                  <source
+                    srcset="./images/tablet/banking-app-interface.jpg 1x, ./images/tablet/banking-app-interface@2x.jpg 2x"
+                    media="(min-width: 768px)">
+
+                  <source
+                    srcset="./images/mobile/banking-app-interface.webp 1x, ./images/mobile/banking-app-interface@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp">
+                  <source
+                    srcset="./images/mobile/banking-app-interface.jpg 1x, ./images/mobile/banking-app-interface@2x.jpg 2x"
+                    media="(max-width: 767px)">
+
+                  <img src="./images/mobile/banking-app-interface.jpg.jpg" alt="Banking App Interface Concept"
+                    class="card-img" />
+                </picture>
+                <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
+                  Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
+
               <div class="card-content">
                 <h2 class="title">Banking App Interface Concept</h2>
                 <p class="filter-tag text">App</p>
@@ -156,10 +181,27 @@
             </a>
           </li>
           <li class="card-item">
-            <a class="card-link" href="./">
+            <a class="link card-link" href="./">
               <div class="card-image-box">
-                <img class="card-img" src="./images/portfolio/cashless-payment.jpg" alt="Cashless Payment"
-                  width="360" />
+                <picture>
+                  <source
+                    srcset="./images/desktop/cashless-payment.webp 1x, ./images/desktop/cashless-payment@2x.webp 2x"
+                    media="(min-width: 1158px)" type="image/webp">
+                  <source srcset="./images/desktop/cashless-payment.jpg 1x, ./images/desktop/cashless-payment@2x.jpg 2x"
+                    media="(min-width: 1158px)">
+
+                  <source srcset="./images/tablet/cashless-payment.webp 1x, ./images/tablet/cashless-payment@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp">
+                  <source srcset="./images/tablet/cashless-payment.jpg 1x, ./images/tablet/cashless-payment@2x.jpg 2x"
+                    media="(min-width: 768px)">
+
+                  <source srcset="./images/mobile/cashless-payment.webp 1x, ./images/mobile/cashless-payment@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp">
+                  <source srcset="./images/mobile/cashless-payment.jpg 1x, ./images/mobile/cashless-payment@2x.jpg 2x"
+                    media="(max-width: 767px)">
+
+                  <img src="./images/mobile/cashless-payment.jpg.jpg" alt="Cashless Payment" class="card-img" />
+                </picture>
                 <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                   Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
@@ -171,9 +213,26 @@
             </a>
           </li>
           <li class="card-item">
-            <a class="card-link" href="./">
+            <a class="link card-link" href="./">
               <div class="card-image-box">
-                <img class="card-img" src="./images/portfolio/mediaton-app.jpg" alt="Meditaion App" width="360" />
+                <picture>
+                  <source srcset="./images/desktop/mediaton-app.webp 1x, ./images/desktop/mediaton-app@2x.webp 2x"
+                    media="(min-width: 1158px)" type="image/webp">
+                  <source srcset="./images/desktop/mediaton-app.jpg 1x, ./images/desktop/mediaton-app@2x.jpg 2x"
+                    media="(min-width: 1158px)">
+
+                  <source srcset="./images/tablet/mediaton-app.webp 1x, ./images/tablet/mediaton-app@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp">
+                  <source srcset="./images/tablet/mediaton-app.jpg 1x, ./images/tablet/mediaton-app@2x.jpg 2x"
+                    media="(min-width: 768px)">
+
+                  <source srcset="./images/mobile/mediaton-app.webp 1x, ./images/mobile/mediaton-app@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp">
+                  <source srcset="./images/mobile/mediaton-app.jpg 1x, ./images/mobile/mediaton-app@2x.jpg 2x"
+                    media="(max-width: 767px)">
+
+                  <img src="./images/mobile/mediaton-app.jpg.jpg" alt="Meditaion App" class="card-img" />
+                </picture>
                 <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                   Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
@@ -185,9 +244,26 @@
             </a>
           </li>
           <li class="card-item">
-            <a class="card-link" href="./">
+            <a class="link card-link" href="./">
               <div class="card-image-box">
-                <img class="card-img" src="./images/portfolio/taxi-service.jpg" alt="Taxi Service" width="360" />
+                <picture>
+                  <source srcset="./images/desktop/taxi-service.webp 1x, ./images/desktop/taxi-service@2x.webp 2x"
+                    media="(min-width: 1158px)" type="image/webp">
+                  <source srcset="./images/desktop/taxi-service.jpg 1x, ./images/desktop/taxi-service@2x.jpg 2x"
+                    media="(min-width: 1158px)">
+
+                  <source srcset="./images/tablet/taxi-service.webp 1x, ./images/tablet/taxi-service@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp">
+                  <source srcset="./images/tablet/taxi-service.jpg 1x, ./images/tablet/taxi-service@2x.jpg 2x"
+                    media="(min-width: 768px)">
+
+                  <source srcset="./images/mobile/taxi-service.webp 1x, ./images/mobile/taxi-service@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp">
+                  <source srcset="./images/mobile/taxi-service.jpg 1x, ./images/mobile/taxi-service@2x.jpg 2x"
+                    media="(max-width: 767px)">
+
+                  <img src="./images/mobile/taxi-service.jpg.jpg" alt="Taxi Service" class="card-img" />
+                </picture>
                 <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                   Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
@@ -199,12 +275,34 @@
             </a>
           </li>
           <li class="card-item">
-            <a class="card-link" href="./">
+            <a class="link card-link" href="./">
               <div class="card-image-box">
-                <img class="card-img" src="./images/portfolio/screen-illustrations.jpg" alt="Screen Illustrations"
-                  width="360" />
-                <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
-                  App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                <picture>
+                  <source
+                    srcset="./images/desktop/screen-illustrations.webp 1x, ./images/desktop/screen-illustrations@2x.webp 2x"
+                    media="(min-width: 1158px)" type="image/webp">
+                  <source
+                    srcset="./images/desktop/screen-illustrations.jpg 1x, ./images/desktop/screen-illustrations@2x.jpg 2x"
+                    media="(min-width: 1158px)">
+
+                  <source
+                    srcset="./images/tablet/screen-illustrations.webp 1x, ./images/tablet/screen-illustrations@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp">
+                  <source
+                    srcset="./images/tablet/screen-illustrations.jpg 1x, ./images/tablet/screen-illustrations@2x.jpg 2x"
+                    media="(min-width: 768px)">
+
+                  <source
+                    srcset="./images/mobile/screen-illustrations.webp 1x, ./images/mobile/screen-illustrations@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp">
+                  <source
+                    srcset="./images/mobile/screen-illustrations.jpg 1x, ./images/mobile/screen-illustrations@2x.jpg 2x"
+                    media="(max-width: 767px)">
+
+                  <img src="./images/mobile/screen-illustrations.jpg.jpg" alt="Screen Illustrations" class="card-img" />
+                </picture>
+                <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
+                  Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
               <div class="card-content">
                 <h2 class="title">Screen Illustrations</h2>
@@ -213,26 +311,65 @@
             </a>
           </li>
           <li class="card-item">
-            <a class="card-link" href="./">
+            <a class="link card-link" href="./">
               <div class="card-image-box">
-                <img class="card-img" src="./images/portfolio/online-courses.jpg" alt="Online Courses" width="360" />
+                <picture>
+                  <source srcset="./images/desktop/online-courses.webp 1x, ./images/desktop/online-courses@2x.webp 2x"
+                    media="(min-width: 1158px)" type="image/webp">
+                  <source srcset="./images/desktop/online-courses.jpg 1x, ./images/desktop/online-courses@2x.jpg 2x"
+                    media="(min-width: 1158px)">
+
+                  <source srcset="./images/tablet/online-courses.webp 1x, ./images/tablet/online-courses@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp">
+                  <source srcset="./images/tablet/online-courses.jpg 1x, ./images/tablet/online-courses@2x.jpg 2x"
+                    media="(min-width: 768px)">
+
+                  <source srcset="./images/mobile/online-courses.webp 1x, ./images/mobile/online-courses@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp">
+                  <source srcset="./images/mobile/online-courses.jpg 1x, ./images/mobile/online-courses@2x.jpg 2x"
+                    media="(max-width: 767px)">
+
+                  <img src="./images/mobile/online-courses.jpg.jpg" alt="Online Courses" class="card-img" />
+                </picture>
                 <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                   Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
               <div class="card-content">
-
                 <h2 class="title">Online Courses</h2>
                 <p class="filter-tag text">Marketing</p>
               </div>
             </a>
           </li>
           <li class="card-item">
-            <a class="card-link" href="./">
+            <a class="link card-link" href="./">
               <div class="card-image-box">
-                <img class="card-img" src="./images/portfolio/instagram-stories-concept.jpg"
-                  alt="Instagram Stories Concept" width="360" />
-                <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
-                  App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                <picture>
+                  <source
+                    srcset="./images/desktop/instagram-stories-concept.webp 1x, ./images/desktop/instagram-stories-concept@2x.webp 2x"
+                    media="(min-width: 1158px)" type="image/webp">
+                  <source
+                    srcset="./images/desktop/instagram-stories-concept.jpg 1x, ./images/desktop/instagram-stories-concept@2x.jpg 2x"
+                    media="(min-width: 1158px)">
+
+                  <source
+                    srcset="./images/tablet/instagram-stories-concept.webp 1x, ./images/tablet/instagram-stories-concept@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp">
+                  <source
+                    srcset="./images/tablet/instagram-stories-concept.jpg 1x, ./images/tablet/instagram-stories-concept@2x.jpg 2x"
+                    media="(min-width: 768px)">
+
+                  <source
+                    srcset="./images/mobile/instagram-stories-concept.webp 1x, ./images/mobile/instagram-stories-concept@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp">
+                  <source
+                    srcset="./images/mobile/instagram-stories-concept.jpg 1x, ./images/mobile/instagram-stories-concept@2x.jpg 2x"
+                    media="(max-width: 767px)">
+
+                  <img src="./images/mobile/instagram-stories-concept.jpg.jpg" alt="Instagram Stories Concept"
+                    class="card-img" />
+                </picture>
+                <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
+                  Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
               <div class="card-content">
                 <h2 class="title">Instagram Stories Concept</h2>
@@ -241,9 +378,27 @@
             </a>
           </li>
           <li class="card-item">
-            <a class="card-link" href="./">
+            <a class="link card-link" href="./">
               <div class="card-image-box">
-                <img class="card-img" src="./images/portfolio/organic-food.jpg" alt="Organic Food" width="360" />
+                <picture>
+                  <source srcset="./images/desktop/organic-food.webp 1x, ./images/desktop/organic-food@2x.webp 2x"
+                    media="(min-width: 1158px)" type="image/webp">
+                  <source srcset="./images/desktop/organic-food.jpg 1x, ./images/desktop/organic-food@2x.jpg 2x"
+                    media="(min-width: 1158px)">
+
+                  <source srcset="./images/tablet/organic-food.webp 1x, ./images/tablet/organic-food@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp">
+                  <source srcset="./images/tablet/organic-food.jpg 1x, ./images/tablet/organic-food@2x.jpg 2x"
+                    media="(min-width: 768px)">
+
+                  <source srcset="./images/mobile/organic-food.webp 1x, ./images/mobile/organic-food@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp">
+                  <source srcset="./images/mobile/organic-food.jpg 1x, ./images/mobile/organic-food@2x.jpg 2x"
+                    media="(max-width: 767px)">
+
+                  <img src="./images/mobile/organic-food.jpg.jpg" alt="Banking App Interface Concept"
+                    class="card-img" />
+                </picture>
                 <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                   Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
@@ -255,9 +410,26 @@
             </a>
           </li>
           <li class="card-item">
-            <a class="card-link" href="./">
+            <a class="link card-link" href="./">
               <div class="card-image-box">
-                <img class="card-img" src="./images/portfolio/fresh-coffee.jpg" alt="Fresh Coffee" width="360" />
+                <picture>
+                  <source srcset="./images/desktop/fresh-coffee.webp 1x, ./images/desktop/fresh-coffee@2x.webp 2x"
+                    media="(min-width: 1158px)" type="image/webp">
+                  <source srcset="./images/desktop/fresh-coffee.jpg 1x, ./images/desktop/fresh-coffee@2x.jpg 2x"
+                    media="(min-width: 1158px)">
+
+                  <source srcset="./images/tablet/fresh-coffee.webp 1x, ./images/tablet/fresh-coffee@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp">
+                  <source srcset="./images/tablet/fresh-coffee.jpg 1x, ./images/tablet/fresh-coffee@2x.jpg 2x"
+                    media="(min-width: 768px)">
+
+                  <source srcset="./images/mobile/fresh-coffee.webp 1x, ./images/mobile/fresh-coffee@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp">
+                  <source srcset="./images/mobile/fresh-coffee.jpg 1x, ./images/mobile/fresh-coffee@2x.jpg 2x"
+                    media="(max-width: 767px)">
+
+                  <img src="./images/mobile/fresh-coffee.jpg.jpg" alt="Fresh Coffee" class="card-img" />
+                </picture>
                 <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                   Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
@@ -321,7 +493,7 @@
         <h3 class="footer-title">Subscribe</h3>
         <form class="footer-form">
           <label class="form-label"><input type="email" name="mail" placeholder="E-mail" class="field-input"></label>
-          <button class="form-subscribe order-btn" type="submit" data-modal-close>
+          <button class="form-subscribe order-btn" type="submit">
             <span class="btn-text">Subscribe</span>
             <svg class="subscribe-icon" width="24" height="20">
               <use href="./images/symbol-defs.svg#icon-send"></use>
