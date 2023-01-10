@@ -152,6 +152,7 @@ body {
 }
 
 .page-header{
+    margin: 0 auto;
     width: 100%;
     background: #FFFFFF;
     box-shadow: 
@@ -160,6 +161,11 @@ body {
         0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
+@media screen and (min-width: 1158px) {
+    .page-header {
+        max-width: 1440px;
+    }
+}
 .mobile-nav {
     display: flex;
     justify-content: space-between;
@@ -445,11 +451,27 @@ body {
 /*------------------- index.html styles -------------------*/
 
 /*------------------- Hero section styles */
+
 .section {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+}
+
+.hero.section {
     padding: 112px 0px;
+}
+
+@media screen and (min-width: 768px) {
+    .hero.section {
+        padding-bottom: 108px;
+    }    
+}
+
+@media screen and (min-width: 1158px) {
+    .hero.section {
+        padding: 188px 0;
+    }    
 }
 
 .hero {
@@ -476,6 +498,9 @@ body {
         background-image:
             linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url("../images/dark-bg-tablet.jpg");
+    }
+    .section {
+        padding: 112px 0px;
     }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
@@ -561,6 +586,7 @@ body {
 @media screen and (min-width: 1158px) {
     .section {
         padding: 120px 0;
+        max-width: 1440px;
     }
 }
 
@@ -823,10 +849,17 @@ body {
 /*------------------- Footer section styles */
 
 .footer {
+    margin: 0 auto;
     background-color: var(--Dark);
     color: var(--Accent);
     text-align: left;
     padding: 96px 0;
+}
+
+@media screen and (min-width: 1158px) {
+    .footer {
+        max-width: 1440px;
+    }
 }
 
 /* --- Main footer container */
