@@ -191,6 +191,7 @@ body {
     color: var(--primary-brand);
 }
 
+
 /*-------------- mobile header menu only */
 @media screen and (max-width: 767px) {
     .main-menu,
@@ -213,7 +214,7 @@ body {
         background-color: transparent;
         outline: transparent;
     }
-
+    
     .mobile-menu {
         position: fixed;
         top: 0;
@@ -226,16 +227,16 @@ body {
         overflow-y: scroll;
         background-color: #fff;
         box-shadow:
-            0 0 100vw rgba(0, 0, 0, 0.75),
-            0 0 10vw black;
-
+        0 0 100vw rgba(0, 0, 0, 0.75),
+        0 0 10vw black;
+        
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
         transition: 
-            opacity 250ms cubic-bezier(var(--cubic)),
-            transform 250ms cubic-bezier(var(--cubic)),
-            visibility 250ms cubic-bezier(var(--cubic));
+        opacity 250ms cubic-bezier(var(--cubic)),
+        transform 250ms cubic-bezier(var(--cubic)),
+        visibility 250ms cubic-bezier(var(--cubic));
     }
 
     .mobile-menu.is-open {
@@ -244,24 +245,24 @@ body {
         visibility: visible;
         pointer-events: auto;
     }
-
+    
     .close-menu {
         width: 24px;
         height: 24px;
-
+        
         display: flex;
         align-items: center;
         justify-content: center;
-
+        
         margin-left: auto;
-
+        
         cursor: pointer;
         border-radius: 50%;
         color: var(--icon);
         background: var(--Accent);
         border: 1px solid rgba(0, 0, 0, 0.1);
     }
-
+    
     .close-menu:hover,
     .close-menu:focus {
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -274,12 +275,12 @@ body {
         flex-direction: column;
         height: calc( 100% - 24px);
     }
-
+    
     .card-socials {
         display: flex;
         justify-content: space-between;
     }
-
+    
     .card-socials .link {
         display: flex;
         justify-content: center;
@@ -290,7 +291,7 @@ body {
         background-color: var(--primary-brand);
         border-radius: 50%;
     }
-
+    
     .modal-menu {
         margin-top: 16px;
     }
@@ -306,7 +307,7 @@ body {
     .addr-item:not(:last-child) {
         margin-bottom: 40px;
     }
-
+    
     .is-active {
         color: var(--order-active);
     }
@@ -315,19 +316,27 @@ body {
         margin-top: auto;
         margin-bottom: 48px;
     }
-
+    
     .addr-tel {
         font-weight: 500;
         font-size: 36px;
         line-height: 1.11;
         color: var(--primary-brand);
     }
-
+    
     .addr-mail {
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         color: var(--_text);
+    }
+}
+@media screen and (max-width: 427px){
+    .addr-tel {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.11;
+        color: var(--primary-brand);
     }
 }
 /*-------------- mobile header end */
@@ -337,7 +346,7 @@ body {
     .mobile-menu {
         display: none;
     }
-
+    
     .header-nav,
     .main-menu {
         display: flex;
