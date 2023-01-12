@@ -255,6 +255,7 @@ body {
         justify-content: center;
         
         margin-left: auto;
+        margin-bottom: 16px;
         
         cursor: pointer;
         border-radius: 50%;
@@ -273,7 +274,7 @@ body {
     .modal-container {
         display: flex;
         flex-direction: column;
-        height: calc( 100% - 24px);
+        height: 100%;
     }
     
     .card-socials {
@@ -293,7 +294,7 @@ body {
     }
     
     .modal-menu {
-        margin-top: 16px;
+        margin-bottom: auto;
     }
 
     .menu-link {
@@ -313,7 +314,6 @@ body {
     }
 
     .modal-addr {
-        margin-top: auto;
         margin-bottom: 48px;
     }
     
